@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="refresh" content="5;url=/shortner"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offsec Reaper</title>
+     <style>
+        body {
+            background-color: black;
+            color: green;
+            font-family: "Courier New", monospace;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .glitch {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            background-color: red;
+            opacity: 0.6;
+            z-index: -1;
+            animation: glitch-animation 2s infinite;
+        }
+        @keyframes glitch-animation {
+            0% {
+                transform: skewX(5deg) scaleY(1);
+                opacity: 0.8;
+            }
+            25% {
+                transform: skewX(-5deg) scaleY(1);
+                opacity: 0.6;
+            }
+            50% {
+                transform: skewX(5deg) scaleY(1);
+                opacity: 0.8;
+            }
+            75% {
+                transform: skewX(0deg) scaleY(1.2);
+                opacity: 0.6;
+            }
+            100% {
+                transform: skewX(5deg) scaleY(1);
+                opacity: 0.8;
+            }
+        }
+        h1 {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            max-width: 80%;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            text-decoration: none;
+            color: green;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+        audio {
+            display: none; /* Hide the audio controller */
+        }
+    </style>
+</head>
+<body>
+    <div class="glitch"></div>
+    <h1>Offsec Reaper</h1>
+    <img src="{{ url_for('static', filename='0ffsec.png') }}" alt="Your Image">
+    <p>About Me: An Eagerness of Leaning of new Security Skill Always happy for meetups
+Preparing for oscp
+Just believe in leaning and hardworking
+not to show just to implement and reduces my security patches fast if found vulnerability in myself
+Having Good knowledge in Api pentest, Network pentest, Internal pentest, Cloud pentest, Web pentest,
+And after all i am an threat actor.</p>
+    <div class="social-links">
+        <a href="https://www.youtube.com/@offsecreaper" target="_blank">YouTube</a>
+        <a href="https://www.instagram.com/0ffsecreaper/" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/in/sushant-singh-naruka-907808217/" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com/CrimsonReaper00" target="_blank">Twitter</a>
+    </div>
+     <!-- Add a form to input long URLs -->
+    <form action="/shorten" method="POST">
+        <label for="long_url">Enter a long URL:</label>
+        <input type="text" id="long_url" name="long_url" required>
+        <button type="submit">Shorten URL</button>
+    </form>
+    <audio autoplay loop>
+        <source src="{{ url_for('static', filename='hell.mp3') }}" type="audio/mpeg">
+</audio>
+    </audio>
+</body>
+</html>
+
