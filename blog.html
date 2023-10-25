@@ -43,14 +43,6 @@
       max-width: 100%;
       height: auto;
       margin-bottom: 10px;
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      z-index: 1;
-    }
-
-    .post-content {
-      line-height: 1.5;
     }
 
     .horror-list {
@@ -59,62 +51,27 @@
       margin-bottom: 30px;
     }
 
-    .horror-list .dropdown-btn {
+    .dropdown-btn {
       cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 5px;
       font-weight: bold;
       color: red;
       text-transform: uppercase;
     }
 
-    .horror-list .dropdown-content {
+    .dropdown-content {
       display: none;
       background-color: black;
       padding: 10px;
+      color: white;
     }
 
-    .horror-list .dropdown-btn.active .dropdown-content {
+    .dropdown-btn.active + .dropdown-content {
       display: block;
-    }
-
-    .horror-list .dropdown-btn::after {
-      content: "+";
-      margin-left: 5px;
-    }
-
-    .horror-list .dropdown-btn.active::after {
-      content: "-";
     }
   </style>
 </head>
 
 <body>
-  <nav class="menu">
-    <ol>
-      <li class="menu-item"><a href="#0">Home</a></li>
-      <li class="menu-item"><a href="#0">About</a></li>
-      <li class="menu-item">
-        <a href="#0">Widgets</a>
-        <ol class="sub-menu">
-          <li class="menu-item"><a href="#0">Big Widgets</a></li>
-          <li class="menu-item"><a href="#0">Bigger Widgets</a></li>
-          <li class="menu-item"><a href="#0">Huge Widgets</a></li>
-        </ol>
-      </li>
-      <li class="menu-item">
-        <a href="#0">Kabobs</a>
-        <ol class="sub-menu">
-          <li class="menu-item"><a href="#0">Shishkabobs</a></li>
-          <li class="menu-item"><a href="#0">BBQ kabobs</a></li>
-          <li class="menu-item"><a href="#0">Summer kabobs</a></li>
-        </ol>
-      </li>
-      <li class="menu-item"><a href="#0">Contact</a></li>
-    </ol>
-  </nav>
   <div class="container">
     <h1>Welcome to the 0ffsec Reaper Blog</h1>
     <img src="0ff$€c.png" alt="Horror Image" class="post-image">
@@ -127,6 +84,7 @@
       <p class="post-content">Are you ready to face your fears and conquer these bone-chilling challenges? Stay tuned
         for more spine-tingling updates!</p>
     </div>
+
 
     <div class="horror-list">
       <div class="dropdown-btn" id="horror-dropdown-btn">
