@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>0ffsecReaper Blogs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Jua', sans-serif;
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      color: red;
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .post {
+      margin-bottom: 30px;
+    }
+
+    .post-title {
+      color: red;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .post-image {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1;
+    }
+
+    .post-content {
+      line-height: 1.5;
+    }
+
+    .horror-list {
+      font-size: 20px;
+      color: white;
+      margin-bottom: 30px;
+    }
+
+    .horror-list .dropdown-btn {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: red;
+      text-transform: uppercase;
+    }
+
+    .horror-list .dropdown-content {
+      display: none;
+      background-color: black;
+      padding: 10px;
+    }
+
+    .horror-list .dropdown-btn.active .dropdown-content {
+      display: block;
+    }
+
+    .horror-list .dropdown-btn::after {
+      content: "+";
+      margin-left: 5px;
+    }
+
+    .horror-list .dropdown-btn.active::after {
+      content: "-";
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="menu">
+    <ol>
+      <li class="menu-item"><a href="#0">Home</a></li>
+      <li class="menu-item"><a href="#0">About</a></li>
+      <li class="menu-item">
+        <a href="#0">Widgets</a>
+        <ol class="sub-menu">
+          <li class="menu-item"><a href="#0">Big Widgets</a></li>
+          <li class="menu-item"><a href="#0">Bigger Widgets</a></li>
+          <li class="menu-item"><a href="#0">Huge Widgets</a></li>
+        </ol>
+      </li>
+      <li class="menu-item">
+        <a href="#0">Kabobs</a>
+        <ol class="sub-menu">
+          <li class="menu-item"><a href="#0">Shishkabobs</a></li>
+          <li class="menu-item"><a href="#0">BBQ kabobs</a></li>
+          <li class="menu-item"><a href="#0">Summer kabobs</a></li>
+        </ol>
+      </li>
+      <li class="menu-item"><a href="#0">Contact</a></li>
+    </ol>
+  </nav>
+  <div class="container">
+    <h1>Welcome to the 0ffsec Reaper Blog</h1>
+    <img src="0ff$€c.png" alt="Horror Image" class="post-image">
+
+    <div class="post">
+      <h2 class="post-title">Security CTF, Machines and Box Solutions</h2>
+      <p class="post-content">In this blog post, we will dive into the world of CTF (Capture The Flag) machines and
+        explore the spooky and terrifying box solutions of HackTheBox. Prepare yourself for a chilling adventure into
+        the depths of cybersecurity and hacking!</p>
+      <p class="post-content">Are you ready to face your fears and conquer these bone-chilling challenges? Stay tuned
+        for more spine-tingling updates!</p>
+    </div>
+
+    <div class="horror-list">
+      <div class="dropdown-btn" id="horror-dropdown-btn">
+        <span>Latest Blogs</span>
+      </div>
+      <div class="dropdown-content">
+        <ul>
+          <li>
+            <a href="https://example.com" target="_blank">ApacheBlaze(HacktheBox-challenges)</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <audio src="keep.mp3" autoplay loop></audio>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var dropdownBtn = document.getElementById('horror-dropdown-btn');
+      var dropdownContent = dropdownBtn.nextElementSibling;
+
+      dropdownBtn.addEventListener('click', function (event) {
+        event.stopPropagation(); // Prevent the click event from propagating to the document
+        dropdownContent.classList.toggle('active');
+      });
+
+      document.addEventListener('click', function (event) {
+        if (event.target !== dropdownBtn && event.target !== dropdownContent) {
+          dropdownContent.classList.remove('active'); // Close the dropdown when clicking anywhere else
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
