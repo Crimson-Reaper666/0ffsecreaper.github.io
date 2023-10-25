@@ -101,23 +101,14 @@
     <audio src="keep.mp3" autoplay loop></audio>
   </div>
 
-  <script>
+ <script>
     document.addEventListener('DOMContentLoaded', function () {
-      var dropdownBtn = document.getElementById('horror-dropdown-btn');
-      var dropdownContent = dropdownBtn.nextElementSibling;
+      var dropdownBtn = document.querySelector('.dropdown-btn');
 
-      dropdownBtn.addEventListener('click', function (event) {
-        event.stopPropagation(); // Prevent the click event from propagating to the document
-        dropdownContent.classList.toggle('active');
-      });
-
-      document.addEventListener('click', function (event) {
-        if (event.target !== dropdownBtn && event.target !== dropdownContent) {
-          dropdownContent.classList.remove('active'); // Close the dropdown when clicking anywhere else
-        }
+      dropdownBtn.addEventListener('click', function () {
+        dropdownBtn.classList.toggle('active');
       });
     });
   </script>
 </body>
-
 </html>
