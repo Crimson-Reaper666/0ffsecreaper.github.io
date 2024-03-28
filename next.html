@@ -1,157 +1,182 @@
 <!DOCTYPE html>
 <html dir='ltr' lang='en-GB'>
+
 <head>
-<meta content='width=device-width, initial-scale=1' name='viewport'/>
-<title>0FFSEC REAPER</title>
-<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
-<!-- Chrome, Firefox OS and Opera -->
-<meta content='#01050c' name='theme-color'/>
-<!-- Windows Phone -->
-<meta content='#01050c' name='msapplication-navbutton-color'/>
-<meta content='blogger' name='generator'/>
-<link href='https://0ffsecreaper.blogspot.com/favicon.ico' rel='icon' type='image/x-icon'/>
-<link href='https://0ffsecreaper.blogspot.com/' rel='canonical'/>
-<link rel="alternate" type="application/atom+xml" title="0FFSEC REAPER - Atom" href="https://0ffsecreaper.blogspot.com/feeds/posts/default" />
-<link rel="alternate" type="application/rss+xml" title="0FFSEC REAPER - RSS" href="https://0ffsecreaper.blogspot.com/feeds/posts/default?alt=rss" />
-<link rel="service.post" type="application/atom+xml" title="0FFSEC REAPER - Atom" href="https://www.blogger.com/feeds/2413027723170640104/posts/default" />
-<link rel="me" href="https://www.blogger.com/profile/10035979052513408615" />
-<!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
-<meta content='adult' name='rating'/>
-<meta content='https://0ffsecreaper.blogspot.com/' property='og:url'/>
-<meta content='0FFSEC REAPER' property='og:title'/>
-<meta content='' property='og:description'/>
-<meta content='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgN7b-6RLZIiKGczHViaz3-M0oCMlha5XuVXFXX67WoKja37lfUUljFF22tz0hLpVCVoS3gxk2M1nFSEC0FCA9SbMB9v9Wphq-dWEjcLlAShSercibfoemD8CkHz0Vu1wiFYht0snXoDcc4QM9QnQg7ev_D64_yol98RiK3dsUwoLbctpsBiIEW82Mmcfcj/w1200-h630-p-k-no-nu/0ff$%E2%82%ACc.png' property='og:image'/>
-<meta content='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgW5oOw0SOzgqQT5xNq0Skw_2XqDfGi0rz2X-uYhgZCakIK_Wv0x2vX6ihe4zvkQXwdLgCezVI5zyTxalq3bHG2e526f0jDalkQ1Nfpt1DtZtiUhwSZMOBYtLoMg-IPAN01dzy70Q4hVjBjd641JIxKNeqV1uxglUg8aU52Cio0S_p-rTqCL_WM2wnSXWWK/w1200-h630-p-k-no-nu/ocean-7065813.jpg' property='og:image'/>
+    <meta content='width=device-width, initial-scale=1' name='viewport' />
+    <title>0FFSEC REAPER</title>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta content='#01050c' name='theme-color' />
+    <!-- Windows Phone -->
+    <meta content='#01050c' name='msapplication-navbutton-color' />
+    <meta content='blogger' name='generator' />
+    <link href='https://0ffsecreaper.blogspot.com/favicon.ico' rel='icon' type='image/x-icon' />
+    <link href='https://0ffsecreaper.blogspot.com/' rel='canonical' />
+    <link rel="alternate" type="application/atom+xml" title="0FFSEC REAPER - Atom"
+        href="https://0ffsecreaper.blogspot.com/feeds/posts/default" />
+    <link rel="alternate" type="application/rss+xml" title="0FFSEC REAPER - RSS"
+        href="https://0ffsecreaper.blogspot.com/feeds/posts/default?alt=rss" />
+    <link rel="service.post" type="application/atom+xml" title="0FFSEC REAPER - Atom"
+        href="https://www.blogger.com/feeds/2413027723170640104/posts/default" />
+    <link rel="me" href="https://www.blogger.com/profile/10035979052513408615" />
+    <!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+    <meta content='' name='rating' />
+    <meta content='https://0ffsecreaper.blogspot.com/' property='og:url' />
+    <meta content='0FFSEC REAPER' property='og:title' />
+    <meta content='' property='og:description' />
+    <meta
+        content='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgN7b-6RLZIiKGczHViaz3-M0oCMlha5XuVXFXX67WoKja37lfUUljFF22tz0hLpVCVoS3gxk2M1nFSEC0FCA9SbMB9v9Wphq-dWEjcLlAShSercibfoemD8CkHz0Vu1wiFYht0snXoDcc4QM9QnQg7ev_D64_yol98RiK3dsUwoLbctpsBiIEW82Mmcfcj/w1200-h630-p-k-no-nu/0ff$%E2%82%ACc.png'
+        property='og:image' />
+    <meta
+        content='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgW5oOw0SOzgqQT5xNq0Skw_2XqDfGi0rz2X-uYhgZCakIK_Wv0x2vX6ihe4zvkQXwdLgCezVI5zyTxalq3bHG2e526f0jDalkQ1Nfpt1DtZtiUhwSZMOBYtLoMg-IPAN01dzy70Q4hVjBjd641JIxKNeqV1uxglUg8aU52Cio0S_p-rTqCL_WM2wnSXWWK/w1200-h630-p-k-no-nu/ocean-7065813.jpg'
+        property='og:image' />
 
-  <style>
-    body {
-      background-color: rgba(0, 0, 0, 0.7) ;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      font-family: 'Lucifer', cursive; /* Use a hellish or demonic font. */
-      color: #ff7043; /* Eerie font color. */
-    }
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.7);
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Lucifer', cursive;
+            /* Use a hellish or demonic font. */
+            color: #ff7043;
+            /* Eerie font color. */
+        }
 
-    .horror-background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url('grim.svg') center center no-repeat;
-      background-size: cover;
-      z-index: -1;
-      mix-blend-mode: overlay; /* Overlay to blend with the background */
-    }
+        .horror-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('grim.svg') center center no-repeat;
+            background-size: cover;
+            z-index: -1;
+            mix-blend-mode: overlay;
+            /* Overlay to blend with the background */
+        }
 
-    .content-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
 
-    .about-section {
-      font-size: 3em;
-      animation: fade-in 4s ease-out;
-    }
+        .about-section {
+            font-size: 3em;
+            animation: fade-in 4s ease-out;
+        }
 
-    .bio-section {
-      margin: 20px 0;
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.7);
-      text-align: center;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      z-index: 4;
-    }
+        .bio-section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 4;
+        }
 
-    .bio-section p {
-      margin: 10px 0;
-    }
+        .bio-section p {
+            margin: 10px 0;
+        }
 
-    .blog-button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #ff7043;
-      color: black;
-      text-align: center;
-      text-decoration: none;
-      border: 2px solid #ff7043;
-      border-radius: 10px;
-      transition: background-color 0.3s, color 0.3s;
-      font-size: 20px;
-    }
+        .blog-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff7043;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid #ff7043;
+            border-radius: 10px;
+            transition: background-color 0.3s, color 0.3s;
+            font-size: 20px;
+        }
 
-    .blog-button:hover {
-      background-color: #ff7043;
-      color: black;
-    }
+        .blog-button:hover {
+            background-color: #ff7043;
+            color: black;
+        }
 
-    @keyframes fade-in {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
+
 <body>
-  <!-- Background Sound -->
-  <audio autoplay loop>
-    <source src="epic-logo.mp3" type="audio/mpeg"> <!-- Replace with your horror-themed music. -->
-  </audio>
-  
-  <div class="horror-background"></div>
-  <div class="content-container">
-    <div class="about-section">
-      <h1>0FFSEC REAPER </h1>
-      <p>The One Who Takes the Security Soul Out</p>
-    </div>
-    <div class="bio-section">
-      <pre>
+    <!-- Background Sound -->
+    <audio autoplay loop>
+        <source src="epic-logo.mp3" type="audio/mpeg">
+        <!-- Replace with your horror-themed music. -->
+    </audio>
+
+    <div class="horror-background"></div>
+    <div class="content-container">
+       <iframe width="460" height="315" src="https://www.youtube.com/embed/zeAgS-I2-7s?si=iMZEIf975yXIFEam" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position: fixed; top: 0; left: 0;"></iframe>
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/eYoCoB_wnsM?si=7gW9nDLhauERcNKR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: fixed; top: 0; right: 0;"></iframe>
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/18ddbUxnVp4?si=1Pniw20xZ8zW1CBy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: fixed; bottom: 0; left: 0;"></iframe>
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/L6S60NcevVU?si=-xVQq3ha6Zyrr18E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: fixed; bottom: 0; right: 0;"></iframe>
+
+        <div class="about-section">
+            <h1>0FFSEC REAPER </h1>
+            <p>The One Who Takes the Security Soul Out</p>
+        </div>
+        <div class="bio-section">
+            <pre>
         <!-- Your existing content -->
         <span class="command typing">0ffsec💀Reaper⟹⟹⟹⟹ whoami</span>
-        <span class="output typing">🌐 Hacker | Security Aficionado | Risk Mitigator | Penetration Tester</span>
-        <span class="output typing">✨ Passionate about cybersecurity and staying one step ahead of cyber threats.</span>
-        <span class="output typing">🤝 Love connecting with fellow enthusiasts and attending industry events.</span>
-        <span class="output typing">📚 Currently preparing to conquer the OSCP challenge.</span>
-        <span class="output typing">🚀 Committed to perpetual learning and unyielding dedication.</span>
-        <span class="output typing">🛡️ On a mission to fortify digital landscapes and plug security gaps.</span>
-        <br>
-        <span class="output typing">💡 Expertise:</span>
-        <span class="output typing">🔐 API Penetration Testing</span>
-        <span class="output typing">🌐 Network Penetration Testing</span>
-        <span class="output typing">☁️ Cloud Penetration Tester</span>
-        <span class="output typing">🌐 Web Application Penetration Testing</span>
-        <br>
-        <span class="output typing">🎯 Mission:</span>
-        <span class="output typing">🔍 Identifying vulnerabilities is just the beginning</span>
-        <span class="output typing">🛠️ Strengthening digital fortresses, one vulnerability at a time.</span>
-        <span class="output typing">📈 Rapid response to security threats, ensuring swift remediation.</span>
-        <br>
-        <span class="output typing">🕵️‍♂️ Battle-Tested Cybersecurity Strategist 🕵️‍♂️</span>
-        <br>
-        <span class="output typing">GAVE ME THE SOUL I AM HUNGRY</span>
-      </pre>
+            <span class="output typing">🌐 Hacker | Security Aficionado | Risk Mitigator | Penetration Tester</span>
+            <span class="output typing">✨ Passionate about cybersecurity and staying one step ahead of cyber threats.</span>
+            <span class="output typing">🤝 Love connecting with fellow enthusiasts and attending industry events.</span>
+            <span class="output typing">📚 Currently preparing to conquer the OSCP challenge.</span>
+            <span class="output typing">🚀 Committed to perpetual learning and unyielding dedication.</span>
+            <span class="output typing">🛡️ On a mission to fortify digital landscapes and plug security gaps.</span>
+            <br>
+            <span class="output typing">💡 Expertise:</span>
+            <span class="output typing">🔐 API Penetration Testing</span>
+            <span class="output typing">🌐 Network Penetration Testing</span>
+            <span class="output typing">☁️ Cloud Penetration Tester</span>
+            <span class="output typing">🌐 Web Application Penetration Testing</span>
+            <br>
+            <span class="output typing">🎯 Mission:</span>
+            <span class="output typing">🔍 Identifying vulnerabilities is just the beginning</span>
+            <span class="output typing">🛠️ Strengthening digital fortresses, one vulnerability at a time.</span>
+            <span class="output typing">📈 Rapid response to security threats, ensuring swift remediation.</span>
+            <br>
+            <span class="output typing">🕵️‍♂️ Battle-Tested Cybersecurity Strategist 🕵️‍♂️</span>
+            <br>
+            <span class="output typing">GAVE ME THE SOUL I AM HUNGRY</span>
+        </pre>
+        </div>
+        <div style="margin-top: 20px;">
+            <!-- Replace the URL with the URL of your LinkedIn post -->
+            <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark"
+                data-type="VERTICAL" data-vanity="sushant-singh-907808217" data-version="v1"><a class="badge-base__link LI-simple-link"
+                    href="https://in.linkedin.com/in/sushant-singh-907808217?trk=profile-badge">Sushant Singh</a></div>
+        </div>
+
+        <!-- Social Media Buttons -->
+        <div class="social-buttons">
+            <a href="https://www.linkedin.com/in/sushant-singh-907808217/" class="blog-button" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/0ffsecreaper/" class="blog-button" target="_blank">Instagram</a>
+            <a href="https://l.instagram.com/?u=https%3A%2F%2Ftwitter.com%2FCrimsonReaper00%3Ft%3D-jkcT-caV7O3AoEttETZNQ%26s%3D09&e=AT3Bt1Jygp4NCA-ReblnPDd_xvjgTy0cHn7d3qBfzCl4U2cAW39-8HT_l5XT70V2qOPFEknceI6nmpOTlm884cnr1zYZQTAtUbeli5e"
+                class="blog-button" target="_blank">Twitter</a>
+            <a href=https://www.youtube.com/@0ffsecreaper class="blog-button" target="_blank">YouTube</a>
+            <a href="https://0ffsecreaper.github.io/blog.html" class="blog-button">Go to Blog</a>
+        </div>
+
     </div>
-    
-    <!-- Social Media Buttons -->
-<div class="social-buttons">
-  <a href="https://www.linkedin.com/in/sushant-singh-907808217/" class="blog-button" target="_blank">LinkedIn</a>
-  <a href="https://www.instagram.com/0ffsecreaper/" class="blog-button" target="_blank">Instagram</a>
-  <a href="https://l.instagram.com/?u=https%3A%2F%2Ftwitter.com%2FCrimsonReaper00%3Ft%3D-jkcT-caV7O3AoEttETZNQ%26s%3D09&e=AT3Bt1Jygp4NCA-ReblnPDd_xvjgTy0cHn7d3qBfzCl4U2cAW39-8HT_l5XT70V2qOPFEknceI6nmpOTlm884cnr1zYZQTAtUbeli5E" class="blog-button" target="_blank">Twitter</a>
-  <a href=https://www.youtube.com/@0ffsecreaper class="blog-button" target="_blank">YouTube</a>
-  <a href="https://0ffsecreaper.github.io/blog.html" class="blog-button">Go to Blog</a>
-</div>
-
-    
-    
-  </div>
 </body>
-</html>
 
+</html>
