@@ -1,70 +1,225 @@
 <!DOCTYPE html>
 <html dir='ltr' lang='en-GB'>
+
 <head>
-<meta content='width=device-width, initial-scale=1' name='viewport'/>
-<title>0FFSEC REAPER</title>
-<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
-<!-- Chrome, Firefox OS and Opera -->
-<meta content='#01050c' name='theme-color'/>
-<!-- Windows Phone -->
-<meta content='#01050c' name='msapplication-navbutton-color'/>
-<meta content='blogger' name='generator'/>
-<link href='https://0ffsecreaper.blogspot.com/favicon.ico' rel='icon' type='image/x-icon'/>
-<link href='https://0ffsecreaper.blogspot.com/' rel='canonical'/>
-<link rel="alternate" type="application/atom+xml" title="0FFSEC REAPER - Atom" href="https://0ffsecreaper.blogspot.com/feeds/posts/default" />
-<link rel="alternate" type="application/rss+xml" title="0FFSEC REAPER - RSS" href="https://0ffsecreaper.blogspot.com/feeds/posts/default?alt=rss" />
-<link rel="service.post" type="application/atom+xml" title="0FFSEC REAPER - Atom" href="https://www.blogger.com/feeds/2413027723170640104/posts/default" />
-<link rel="me" href="https://www.blogger.com/profile/10035979052513408615" />
-<!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
-<meta content='adult' name='rating'/>
-<meta content='https://0ffsecreaper.blogspot.com/' property='og:url'/>
-<meta content='0FFSEC REAPER' property='og:title'/>
-<meta content='' property='og:description'/>
-<meta content='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgN7b-6RLZIiKGczHViaz3-M0oCMlha5XuVXFXX67WoKja37lfUUljFF22tz0hLpVCVoS3gxk2M1nFSEC0FCA9SbMB9v9Wphq-dWEjcLlAShSercibfoemD8CkHz0Vu1wiFYht0snXoDcc4QM9QnQg7ev_D64_yol98RiK3dsUwoLbctpsBiIEW82Mmcfcj/w1200-h630-p-k-no-nu/0ff$%E2%82%ACc.png' property='og:image'/>
-<meta content='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgW5oOw0SOzgqQT5xNq0Skw_2XqDfGi0rz2X-uYhgZCakIK_Wv0x2vX6ihe4zvkQXwdLgCezVI5zyTxalq3bHG2e526f0jDalkQ1Nfpt1DtZtiUhwSZMOBYtLoMg-IPAN01dzy70Q4hVjBjd641JIxKNeqV1uxglUg8aU52Cio0S_p-rTqCL_WM2wnSXWWK/w1200-h630-p-k-no-nu/ocean-7065813.jpg' property='og:image'/>
+    <meta content='width=device-width, initial-scale=1' name='viewport' />
+    <title>0FFSEC REAPER</title>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta content='#01050c' name='theme-color' />
+    <!-- Windows Phone -->
+    <meta content='#01050c' name='msapplication-navbutton-color' />
+    <meta content='blogger' name='generator' />
+    <link href='https://0ffsecreaper.blogspot.com/favicon.ico' rel='icon' type='image/x-icon' />
+    <link href='https://0ffsecreaper.blogspot.com/' rel='canonical' />
+    <link rel="alternate" type="application/atom+xml" title="0FFSEC REAPER - Atom"
+        href="https://0ffsecreaper.blogspot.com/feeds/posts/default" />
+    <link rel="alternate" type="application/rss+xml" title="0FFSEC REAPER - RSS"
+        href="https://0ffsecreaper.blogspot.com/feeds/posts/default?alt=rss" />
+    <link rel="service.post" type="application/atom+xml" title="0FFSEC REAPER - Atom"
+        href="https://www.blogger.com/feeds/2413027723170640104/posts/default" />
+    <link rel="me" href="https://www.blogger.com/profile/10035979052513408615" />
+    <!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+    <meta content='' name='rating' />
+    <meta content='https://0ffsecreaper.blogspot.com/' property='og:url' />
+    <meta content='0FFSEC REAPER' property='og:title' />
+    <meta content='' property='og:description' />
+    <meta
+        content='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgN7b-6RLZIiKGczHViaz3-M0oCMlha5XuVXFXX67WoKja37lfUUljFF22tz0hLpVCVoS3gxk2M1nFSEC0FCA9SbMB9v9Wphq-dWEjcLlAShSercibfoemD8CkHz0Vu1wiFYht0snXoDcc4QM9QnQg7ev_D64_yol98RiK3dsUwoLbctpsBiIEW82Mmcfcj/w1200-h630-p-k-no-nu/0ff$%E2%82%ACc.png'
+        property='og:image' />
+    <meta
+        content='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgW5oOw0SOzgqQT5xNq0Skw_2XqDfGi0rz2X-uYhgZCakIK_Wv0x2vX6ihe4zvkQXwdLgCezVI5zyTxalq3bHG2e526f0jDalkQ1Nfpt1DtZtiUhwSZMOBYtLoMg-IPAN01dzy70Q4hVjBjd641JIxKNeqV1uxglUg8aU52Cio0S_p-rTqCL_WM2wnSXWWK/w1200-h630-p-k-no-nu/ocean-7065813.jpg'
+        property='og:image' />
 
-  <link rel="stylesheet" href="style.css"> <!-- Include your existing CSS -->
+    <!-- Loading Animation Styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 
-  <style>
-    /* Your CSS styles can go here */
-    button {
-      font-size: 24px;
-      padding: 10px 20px;
-      background-color: darkred;
-      color: black;
-      border: 2px solid black;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  </style>
+        body {
+            height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            font-size: 10vw;
+            text-transform: uppercase;
+            overflow: hidden;
+            background: darkred;
+        }
+
+        .disappear {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 100%;
+            text-align: center;
+            height: fit-content;
+            bottom: 0;
+            top: 0;
+        }
+
+        .disappear span {
+            display: inline-block;
+            color: transparent;
+            text-shadow: 0px 0px 0px gold;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        .disappear span:nth-child(1) {
+            animation-name: disappearleft;
+        }
+
+        .disappear span:nth-child(2) {
+            animation-name: disappearleft;
+            animation-delay: .3s;
+        }
+
+        .disappear span:nth-child(3) {
+            animation-name: disappearight;
+            animation-delay: .6s;
+        }
+
+        .disappear span:nth-child(4) {
+            animation-name: disappearleft;
+            animation-delay: .8s;
+        }
+
+        .disappear span:nth-child(5) {
+            animation-name: disappearight;
+            animation-delay: 1s;
+        }
+
+        .disappear span:nth-child(6) {
+            animation-name: disappearight;
+            animation-delay: 1.3s;
+        }
+
+        .disappear span:nth-child(7) {
+            animation-name: disappearleft;
+            animation-delay: 1.6s;
+        }
+
+        .disappear span:nth-child(8) {
+            animation-name: disappearight;
+            animation-delay: 2s;
+        }
+
+        .disappear span:nth-child(9) {
+            animation-name: disappearight;
+            animation-delay: 2.3s;
+        }
+
+        @keyframes disappearleft {
+            50% {
+                transform: skew(50deg) translateY(-200%);
+                text-shadow: 0px 0px 50px;
+                opacity: 0;
+            }
+        }
+
+        @keyframes disappearight {
+            50% {
+                transform: skew(-50deg) translateY(-200%);
+                text-shadow: 0px 0px 50px;
+                opacity: 0;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <!-- Background Sound -->
- <audio autoplay loop>
-    <source src="get-me-out-79760.mp3" type="audio/mpeg"> <!-- Replace with your horror-themed music. -->
-  </audio>
-
-  <!-- Your HTML content -->
-  <div class="content">
-    <div class="right">
-      <div class="door"></div>
-    </div>
-    <div class="left">
-      <div class="stairs">
-        <div class="bars"></div>
-      </div>
-      <div class="nosferatu"></div>
-    </div>
-    <div class='cinema'>
-      <div class="effect">
-        <div class="grain"></div>
-      </div>
+    <!-- Loading Animation -->
+    <div class="disappear">
+        <span>0</span> <span>F</span> <span>F</span> <span>S</span> <span>E</span> <span>C</span> <span>R</span>
+        <span>E</span> <span>A</span> <span>P</span> <span>E</span> <span>R</span>
     </div>
 
-    <!-- Button to navigate to another page -->
-    <button onclick="location.href='next.html';"
-      style="position: fixed; bottom: 10%; right: 5%; background-color: darkred; color: black; font-size: 24px; font-weight: bold; padding: 10px 20px; border: 2px solid black; border-radius: 5px;">Tour to Hell</button>
-  </div>
+    <!-- Main Content (Hidden Initially) -->
+    <div id="main-content" style="display: none;">
+        <!-- Your existing content goes here -->
+
+        <!-- Background Sound -->
+        <div class="horror-background"></div>
+        <div class="content-container">
+            <iframe width="460" height="315"
+                src="https://www.youtube.com/embed/zeAgS-I2-7s?si=iMZEIf975yXIFEam" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" style="position: fixed; top: 0; left: 0;"></iframe>
+            <iframe width="460" height="315"
+                src="https://www.youtube.com/embed/eYoCoB_wnsM?si=7gW9nDLhauERcNKR" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                style="position: fixed; top: 0; right: 0;"></iframe>
+            <iframe width="460" height="315"
+                src="https://www.youtube.com/embed/18ddbUxnVp4?si=1Pniw20xZ8zW1CBy" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                style="position: fixed; bottom: 0; left: 0;"></iframe>
+            <iframe width="460" height="315"
+                src="https://www.youtube.com/embed/L6S60NcevVU?si=-xVQq3ha6Zyrr18E" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                style="position: fixed; bottom: 0; right: 0;"></iframe>
+
+            <div class="about-section">
+                <h1>0FFSEC REAPER </h1>
+                <p>The One Who Takes the Security Soul Out</p>
+            </div>
+            <div class="bio-section">
+                <pre>
+        <!-- Your existing content -->
+        <span class="command typing">0ffsec💀Reaper⟹⟹⟹⟹ whoami</span>
+                <span class="output typing">🌐 Hacker | Security Aficionado | Risk Mitigator | Penetration Tester</span>
+                <span class="output typing">✨ Passionate about cybersecurity and staying one step ahead of cyber threats.</span>
+                <span class="output typing">🤝 Love connecting with fellow enthusiasts and attending industry events.</span>
+                <span class="output typing">📚 Currently preparing to conquer the OSCP challenge.</span>
+                <span class="output typing">🚀 Committed to perpetual learning and unyielding dedication.</span>
+                <span class="output typing">🛡️ On a mission to fortify digital landscapes and plug security gaps.</span>
+                <br>
+                <span class="output typing">💡 Expertise:</span>
+                <span class="output typing">🔐 API Penetration Testing</span>
+                <span class="output typing">🌐 Network Penetration Testing</span>
+                <span class="output typing">☁️ Cloud Penetration Tester</span>
+                <span class="output typing">🌐 Web Application Penetration Testing</span>
+                <br>
+                <span class="output typing">🎯 Mission:</span>
+                <span class="output typing">🔍 Identifying vulnerabilities is just the beginning</span>
+                <span class="output typing">🛠️ Strengthening digital fortresses, one vulnerability at a time.</span>
+                <span class="output typing">📈 Rapid response to security threats, ensuring swift remediation.</span>
+                <br>
+                <span class="output typing">🕵️‍♂️ Battle-Tested Cybersecurity Strategist 🕵️‍♂️</span>
+                <br>
+                <span class="output typing">GAVE ME THE SOUL I AM HUNGRY</span>
+            </pre>
+            </div>
+            <div style="margin-top: 20px;">
+                <!-- Replace the URL with the URL of your LinkedIn post -->
+                <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark"
+                    data-type="VERTICAL" data-vanity="sushant-singh-907808217" data-version="v1"><a class="badge-base__link LI-simple-link"
+                        href="https://in.linkedin.com/in/sushant-singh-907808217?trk=profile-badge">Sushant Singh</a></div>
+            </div>
+
+            <!-- Social Media Buttons -->
+            <div class="social-buttons">
+                <a href="https://www.linkedin.com/in/sushant-singh-907808217/" class="blog-button" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/0ffsecreaper/" class="blog-button" target="_blank">Instagram</a>
+                <a href="https://l.instagram.com/?u=https%3A%2F%2Ftwitter.com%2FCrimsonReaper00%3Ft%3D-jkcT-caV7O3AoEttETZNQ%26s%3D09&e=AT3Bt1Jygp4NCA-ReblnPDd_xvjgTy0cHn7d3qBfzCl4U2cAW39-8HT_l5XT70V2qOPFEknceI6nmpOTlm884cnr1zYZQTAtUbeli5e"
+                    class="blog-button" target="_blank">Twitter</a>
+                <a href=https://www.youtube.com/@0ffsecreaper class="blog-button" target="_blank">YouTube</a>
+                <a href="https://0ffsecreaper.github.io/blog.html" class="blog-button">Go to Blog</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JavaScript to Hide Loading Animation after 3 seconds -->
+    <script>
+        // After 3 seconds, hide the loading animation and display the main content
+        setTimeout(function () {
+            document.querySelector('.disappear').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+        }, 3000);
+    </script>
 </body>
-</html>
 
+</html>
