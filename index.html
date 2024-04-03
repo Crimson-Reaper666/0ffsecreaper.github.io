@@ -124,15 +124,21 @@
             }
         }
     </style>
+    <script>
+        // After 3 seconds, display the main content and hide the loading animation
+        setTimeout(function () {
+            document.getElementById("main-content").style.display = "block";
+            document.getElementById("loading-animation").style.display = "none";
+        }, 3000);
+    </script>
 </head>
 
 <body>
     <!-- Loading Animation -->
-    <div class="disappear">
+    <div id="loading-animation" class="disappear">
         <span>0</span> <span>F</span> <span>F</span> <span>S</span> <span>E</span> <span>C</span> <span>R</span>
         <span>E</span> <span>A</span> <span>P</span> <span>E</span> <span>R</span>
     </div>
-
     <!-- Main Content (Hidden Initially) -->
     <div id="main-content" style="display: none;">
         <!-- Your existing content goes here -->
@@ -213,13 +219,7 @@
     </div>
 
     <!-- JavaScript to Hide Loading Animation after 3 seconds -->
-    <script>
-        // After 3 seconds, hide the loading animation and display the main content
-        setTimeout(function () {
-            document.querySelector('.disappear').style.display = 'none';
-            document.getElementById('main-content').style.display = 'block';
-        }, 3000);
-    </script>
+    
 </body>
 
 </html>
