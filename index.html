@@ -119,6 +119,43 @@
             50% { clip: rect(55px, 9999px, 70px, 0); }
             100% { clip: rect(65px, 9999px, 85px, 0); }
         }
+
+        /* Embedded Content and Image Styling */
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            color: #FFD700;
+            padding: 20px;
+        }
+
+        .image-section img {
+            border-radius: 10px;
+            box-shadow: 0 0 10px 2px #FFD700;
+            width: 250px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        iframe {
+            border: none;
+            box-shadow: 0px 0px 15px 1px #FFD700;
+            margin: 10px;
+        }
+
+        /* Link Style */
+        .bio-links a {
+            color: #FFD700;
+            text-decoration: none;
+            display: inline-block;
+            padding: 5px;
+        }
+
+        .bio-links a:hover {
+            color: #ff4500;
+            text-decoration: underline;
+        }
     </style>
 
     <script>
@@ -142,6 +179,7 @@
             <p>The One Who Takes the Security Soul Out</p>
         </div>
 
+        <!-- Bio Section -->
         <div class="bio-section">
             <pre>
                 <span class="command typing">whoami</span>
@@ -157,6 +195,25 @@
                 <span class="output typing">⚔️ To fortify and protect digital landscapes with precision and strategy.</span>
                 <span class="output typing">🔍 To detect vulnerabilities and swiftly respond to evolving security threats.</span>
             </pre>
+        </div>
+
+        <!-- Content Container for Image and Embedded Videos -->
+        <div class="content-container">
+            <!-- Profile Image -->
+            <div class="image-section">
+                <img src="YOUR_IMAGE_URL_HERE" alt="Profile Image">
+            </div>
+
+            <!-- Embedded YouTube Videos -->
+            <iframe width="460" height="315" src="https://www.youtube.com/embed/zeAgS-I2-7s?si=iMZEIf975yXIFEam" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+            <iframe width="460" height="315" src="https://www.youtube.com/embed/eYoCoB_wnsM?si=7gW9nDLhauERcNKR" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+            <iframe width="460" height="315" src="https://www.youtube.com/embed/18ddbUxnVp4?si=1Pniw20xZ8zW1CBy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+            <iframe width="460" height="315" src="https://www.youtube.com/embed/L6S60NcevVU?si=-xVQq3ha6Zyrr18E" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+
+            <!-- Links -->
+            <div class="bio-links">
+                <a href="https://in.linkedin.com/in/sushant-singh-907808217?trk=profile-badge" target="_blank">LinkedIn Profile</a>
+            </div>
         </div>
     </div>
 </body>
