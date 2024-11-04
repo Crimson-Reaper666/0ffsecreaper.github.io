@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html dir='ltr' lang='en-GB'>
+<html lang="en-GB">
 
 <head>
-    <meta content='width=device-width, initial-scale=1' name='viewport' />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>0FFSEC REAPER</title>
-    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
-    <link href='https://fonts.googleapis.com/css2?family=Creepster&family=Roboto+Mono:wght@700&display=swap' rel='stylesheet'>
-    <link rel='icon' href='https://0ffsecreaper.blogspot.com/favicon.ico' type='image/x-icon' />
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://0ffsecreaper.blogspot.com/favicon.ico" type="image/x-icon" />
 
     <style>
         /* General Body Styling */
@@ -54,12 +54,13 @@
             color: #FFD700;
             text-shadow: 0 0 8px #FFD700;
             text-align: center;
+            animation: glitch 1s infinite;
         }
 
         .about-section p {
             font-size: 1.5em;
-            text-align: center;
             color: #e0e0e0;
+            text-align: center;
             font-style: italic;
         }
 
@@ -70,32 +71,32 @@
             color: #b0b0b0;
         }
 
-        .bio-section .output {
+        .command {
+            color: #FFD700;
+            font-weight: bold;
+        }
+
+        .output {
             color: #FFD700;
             margin-bottom: 10px;
         }
 
-        /* Links Styling */
-        a {
-            color: #FFD700;
-            text-decoration: none;
-        }
-
-        /* Glitch Effect for '0FFSEC REAPER' */
+        /* Glitch Effect */
         .glitch {
-            font-size: 2.5em;
             position: relative;
+            display: inline-block;
             color: #FFD700;
+            font-size: 3em;
             animation: glitch 1s infinite;
         }
 
-        .glitch:before, .glitch:after {
-            content: '0FFSEC REAPER';
+        .glitch:before,
+        .glitch:after {
+            content: "0FFSEC REAPER";
             position: absolute;
-            top: 0;
             left: 0;
             color: #FFD700;
-            opacity: 0.75;
+            opacity: 0.8;
             clip: rect(0, 900px, 0, 0);
         }
 
@@ -107,22 +108,16 @@
             animation: glitchBottom 1s infinite linear;
         }
 
-        @keyframes glitch {
-            2%, 64% { transform: translate(2px, 0); }
-            4%, 60% { transform: translate(-2px, 0); }
-            62% { transform: translate(0, 0); }
-        }
-
         @keyframes glitchTop {
-            0% { clip: rect(42px, 9999px, 44px, 0); }
-            50% { clip: rect(10px, 9999px, 13px, 0); }
-            100% { clip: rect(85px, 9999px, 90px, 0); }
+            0% { clip: rect(20px, 9999px, 35px, 0); }
+            50% { clip: rect(15px, 9999px, 45px, 0); }
+            100% { clip: rect(30px, 9999px, 40px, 0); }
         }
 
         @keyframes glitchBottom {
-            0% { clip: rect(85px, 9999px, 90px, 0); }
-            50% { clip: rect(10px, 9999px, 13px, 0); }
-            100% { clip: rect(42px, 9999px, 44px, 0); }
+            0% { clip: rect(60px, 9999px, 80px, 0); }
+            50% { clip: rect(55px, 9999px, 70px, 0); }
+            100% { clip: rect(65px, 9999px, 85px, 0); }
         }
     </style>
 
@@ -135,10 +130,12 @@
 </head>
 
 <body>
+    <!-- Loading Animation -->
     <div id="loading-animation" class="disappear">
         <span>0</span> <span>F</span> <span>F</span> <span>S</span> <span>E</span> <span>C</span> <span>R</span> <span>E</span> <span>A</span> <span>P</span> <span>E</span> <span>R</span>
     </div>
 
+    <!-- Main Content -->
     <div id="main-content">
         <div class="about-section">
             <h1 class="glitch">0FFSEC REAPER</h1>
@@ -147,10 +144,18 @@
 
         <div class="bio-section">
             <pre>
-<span class="output">🌐 Hacker | Security Aficionado | Risk Mitigator | Penetration Tester</span>
-<span class="output">✨ Passionate about cybersecurity and staying one step ahead of cyber threats.</span>
-<span class="output">📚 Currently preparing to conquer the OSCP challenge.</span>
-<span class="output">🚀 Committed to perpetual learning and unyielding dedication.</span>
+                <span class="command typing">whoami</span>
+                <span class="output typing">🌐 Sushant Singh | Security Engineer | Penetration Tester | Cybersecurity Enthusiast</span>
+                <span class="output typing">💀 Guarding digital fortresses and mitigating critical threats.</span>
+                <span class="output typing">✨ Expertise in API testing, web attacks, and network security.</span>
+                <span class="output typing">🎯 Bug bounty hunter, uncovering critical vulnerabilities for renowned organizations.</span>
+                <span class="output typing">🧠 Active CTF player on Hack The Box, sharpening skills against real-world scenarios.</span>
+                <span class="output typing">🚀 Committed to perpetual learning and adaptability in the dynamic cybersecurity realm.</span>
+                <span class="output typing">🔍 Methodical and analytical, diving deep to secure the core of digital systems.</span>
+                <br>
+                <span class="output typing">🛡️ Mission:</span>
+                <span class="output typing">⚔️ To fortify and protect digital landscapes with precision and strategy.</span>
+                <span class="output typing">🔍 To detect vulnerabilities and swiftly respond to evolving security threats.</span>
             </pre>
         </div>
     </div>
