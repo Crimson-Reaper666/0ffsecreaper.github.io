@@ -1,221 +1,104 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0FFSEC REAPER</title>
+    <title>0FFSEC REAPER - About</title>
     <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
     <link rel="icon" href="https://0ffsecreaper.blogspot.com/favicon.ico" type="image/x-icon" />
 
     <style>
-        /* General Body Styling */
+        /* Page Background and General Styling */
         body {
             font-family: 'Roboto Mono', monospace;
-            background-color: #0d0d0d;
-            color: #e0e0e0;
-            overflow: hidden;
-            height: 100vh;
+            background-color: #1a1a1a;
+            color: #FFD700;
             margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
 
-        /* Loading Animation */
-        .disappear {
-            position: absolute;
-            width: 100%;
+        /* Container Styling */
+        .container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #2e2e2e;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #ff4500;
+            padding: 20px;
             text-align: center;
+            overflow-y: auto; /* Enables scrolling within the container */
+            max-height: 90vh; /* Limits the height to viewport with room for scrolling */
+        }
+
+        /* Heading Styling */
+        h1 {
             font-family: 'Creepster', cursive;
-            color: #FFD700;
+            color: #ff4500;
+            text-shadow: 0 0 8px #ff4500;
             font-size: 2.5em;
-            text-transform: uppercase;
-            animation: flickerAnimation 3s infinite;
-        }
-
-        @keyframes flickerAnimation {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-
-        /* Main Content Styling */
-        #main-content {
-            display: none;
-            animation: fadeIn 1.5s forwards;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        /* About Section */
-        .about-section h1 {
-            font-size: 3em;
-            font-family: 'Creepster', cursive;
-            color: #FFD700;
-            text-shadow: 0 0 8px #FFD700;
-            text-align: center;
-            animation: glitch 1s infinite;
-        }
-
-        .about-section p {
-            font-size: 1.5em;
-            color: #e0e0e0;
-            text-align: center;
-            font-style: italic;
-        }
-
-        /* Bio Section */
-        .bio-section {
-            margin: 20px;
-            font-family: 'Roboto Mono', monospace;
-            color: #b0b0b0;
-        }
-
-        .command {
-            color: #FFD700;
-            font-weight: bold;
-        }
-
-        .output {
-            color: #FFD700;
             margin-bottom: 10px;
         }
 
-        /* Glitch Effect */
-        .glitch {
-            position: relative;
-            display: inline-block;
-            color: #FFD700;
-            font-size: 3em;
-            animation: glitch 1s infinite;
-        }
-
-        .glitch:before,
-        .glitch:after {
-            content: "0FFSEC REAPER";
-            position: absolute;
-            left: 0;
-            color: #FFD700;
-            opacity: 0.8;
-            clip: rect(0, 900px, 0, 0);
-        }
-
-        .glitch:before {
-            animation: glitchTop 1s infinite linear;
-        }
-
-        .glitch:after {
-            animation: glitchBottom 1s infinite linear;
-        }
-
-        @keyframes glitchTop {
-            0% { clip: rect(20px, 9999px, 35px, 0); }
-            50% { clip: rect(15px, 9999px, 45px, 0); }
-            100% { clip: rect(30px, 9999px, 40px, 0); }
-        }
-
-        @keyframes glitchBottom {
-            0% { clip: rect(60px, 9999px, 80px, 0); }
-            50% { clip: rect(55px, 9999px, 70px, 0); }
-            100% { clip: rect(65px, 9999px, 85px, 0); }
-        }
-
-        /* Embedded Content and Image Styling */
-        .content-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-            color: #FFD700;
-            padding: 20px;
-        }
-
+        /* Profile Image Styling */
         .image-section img {
             border-radius: 10px;
-            box-shadow: 0 0 10px 2px #FFD700;
-            width: 250px;
+            box-shadow: 0 0 15px #FFD700;
+            width: 200px;
             height: auto;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
-        iframe {
-            border: none;
-            box-shadow: 0px 0px 15px 1px #FFD700;
-            margin: 10px;
-        }
-
-        /* Link Style */
-        .bio-links a {
+        /* Bio Section Styling */
+        .bio-section pre {
             color: #FFD700;
-            text-decoration: none;
-            display: inline-block;
-            padding: 5px;
+            font-size: 1.1em;
+            line-height: 1.5em;
+            margin: 0;
+            padding: 0;
         }
 
-        .bio-links a:hover {
-            color: #ff4500;
-            text-decoration: underline;
+        /* Embedded Content Styling */
+        iframe {
+            width: 100%;
+            height: 250px;
+            border: none;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #ff4500;
         }
     </style>
-
-    <script>
-        setTimeout(() => {
-            document.getElementById("main-content").style.display = "block";
-            document.getElementById("loading-animation").style.display = "none";
-        }, 3000);
-    </script>
 </head>
-
 <body>
-    <!-- Loading Animation -->
-    <div id="loading-animation" class="disappear">
-        <span>0</span> <span>F</span> <span>F</span> <span>S</span> <span>E</span> <span>C</span> <span>R</span> <span>E</span> <span>A</span> <span>P</span> <span>E</span> <span>R</span>
-    </div>
 
-    <!-- Main Content -->
-    <div id="main-content">
-        <div class="about-section">
-            <h1 class="glitch">0FFSEC REAPER</h1>
-            <p>The One Who Takes the Security Soul Out</p>
+    <div class="container">
+        <h1>0FFSEC REAPER</h1>
+        
+        <!-- Profile Image Section -->
+        <div class="image-section">
+            <img src="YOUR_IMAGE_URL_HERE" alt="Profile Image">
         </div>
-
+        
         <!-- Bio Section -->
         <div class="bio-section">
             <pre>
-                <span class="command typing">whoami</span>
-                <span class="output typing">🌐 Sushant Singh | Security Engineer | Penetration Tester | Cybersecurity Enthusiast</span>
-                <span class="output typing">💀 Guarding digital fortresses and mitigating critical threats.</span>
-                <span class="output typing">✨ Expertise in API testing, web attacks, and network security.</span>
-                <span class="output typing">🎯 Bug bounty hunter, uncovering critical vulnerabilities for renowned organizations.</span>
-                <span class="output typing">🧠 Active CTF player on Hack The Box, sharpening skills against real-world scenarios.</span>
-                <span class="output typing">🚀 Committed to perpetual learning and adaptability in the dynamic cybersecurity realm.</span>
-                <span class="output typing">🔍 Methodical and analytical, diving deep to secure the core of digital systems.</span>
-                <br>
-                <span class="output typing">🛡️ Mission:</span>
-                <span class="output typing">⚔️ To fortify and protect digital landscapes with precision and strategy.</span>
-                <span class="output typing">🔍 To detect vulnerabilities and swiftly respond to evolving security threats.</span>
+Driven by a relentless pursuit of cybersecurity expertise and innovation, I'm Shushi, a highly skilled penetration tester and cybersecurity consultant.
+With extensive hands-on experience in finding vulnerabilities across diverse environments, I've assisted over 20 companies, 
+contributing to the prevention of potential losses exceeding $100k.
             </pre>
         </div>
 
-        <!-- Content Container for Image and Embedded Videos -->
+        <!-- Embedded Content -->
         <div class="content-container">
-            <!-- Profile Image -->
-            <div class="image-section">
-                <img src="YOUR_IMAGE_URL_HERE" alt="Profile Image">
-            </div>
+            <!-- Embed 1 -->
+            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-            <!-- Embedded YouTube Videos -->
-            <iframe width="460" height="315" src="https://www.youtube.com/embed/zeAgS-I2-7s?si=iMZEIf975yXIFEam" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-            <iframe width="460" height="315" src="https://www.youtube.com/embed/eYoCoB_wnsM?si=7gW9nDLhauERcNKR" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-            <iframe width="460" height="315" src="https://www.youtube.com/embed/18ddbUxnVp4?si=1Pniw20xZ8zW1CBy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-            <iframe width="460" height="315" src="https://www.youtube.com/embed/L6S60NcevVU?si=-xVQq3ha6Zyrr18E" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-
-            <!-- Links -->
-            <div class="bio-links">
-                <a href="https://in.linkedin.com/in/sushant-singh-907808217?trk=profile-badge" target="_blank">LinkedIn Profile</a>
-            </div>
+            <!-- Embed 2 -->
+            <iframe src="https://www.linkedin.com/in/YOUR_LINKEDIN_PROFILE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
-</body>
 
+</body>
 </html>
