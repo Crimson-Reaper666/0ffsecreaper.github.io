@@ -5,129 +5,129 @@
     <meta content='width=device-width, initial-scale=1' name='viewport' />
     <title>0FFSEC REAPER</title>
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
-    <!-- Chrome, Firefox OS and Opera -->
-    <meta content='#01050c' name='theme-color' />
-    <!-- Windows Phone -->
-    <meta content='#01050c' name='msapplication-navbutton-color' />
-    <meta content='blogger' name='generator' />
-    <link href='https://0ffsecreaper.blogspot.com/favicon.ico' rel='icon' type='image/x-icon' />
-    <link href='https://0ffsecreaper.blogspot.com/' rel='canonical' />
-    <link rel="alternate" type="application/atom+xml" title="0FFSEC REAPER - Atom"
-        href="https://0ffsecreaper.blogspot.com/feeds/posts/default" />
-    <link rel="alternate" type="application/rss+xml" title="0FFSEC REAPER - RSS"
-        href="https://0ffsecreaper.blogspot.com/feeds/posts/default?alt=rss" />
-    <link rel="service.post" type="application/atom+xml" title="0FFSEC REAPER - Atom"
-        href="https://www.blogger.com/feeds/2413027723170640104/posts/default" />
-    <link rel="me" href="https://www.blogger.com/profile/10035979052513408615" />
-    <!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
-    <meta content='' name='rating' />
-    <meta content='https://0ffsecreaper.blogspot.com/' property='og:url' />
-    <meta content='0FFSEC REAPER' property='og:title' />
-    <meta content='' property='og:description' />
-    <meta
-        content='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgN7b-6RLZIiKGczHViaz3-M0oCMlha5XuVXFXX67WoKja37lfUUljFF22tz0hLpVCVoS3gxk2M1nFSEC0FCA9SbMB9v9Wphq-dWEjcLlAShSercibfoemD8CkHz0Vu1wiFYht0snXoDcc4QM9QnQg7ev_D64_yol98RiK3dsUwoLbctpsBiIEW82Mmcfcj/w1200-h630-p-k-no-nu/0ff$%E2%82%ACc.png'
-        property='og:image' />
-    <meta
-        content='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgW5oOw0SOzgqQT5xNq0Skw_2XqDfGi0rz2X-uYhgZCakIK_Wv0x2vX6ihe4zvkQXwdLgCezVI5zyTxalq3bHG2e526f0jDalkQ1Nfpt1DtZtiUhwSZMOBYtLoMg-IPAN01dzy70Q4hVjBjd641JIxKNeqV1uxglUg8aU52Cio0S_p-rTqCL_WM2wnSXWWK/w1200-h630-p-k-no-nu/ocean-7065813.jpg'
-        property='og:image' />
+    <link href='https://fonts.googleapis.com/css2?family=Creepster&family=Roboto+Mono:wght@700&display=swap' rel='stylesheet'>
+    <link rel='icon' href='https://0ffsecreaper.blogspot.com/favicon.ico' type='image/x-icon' />
 
-    <!-- Loading Animation Styles -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
-
+        /* General Body Styling */
         body {
-            height: 100vh;
-            font-family: 'Poppins', sans-serif;
-            font-size: 10vw;
-            text-transform: uppercase;
+            font-family: 'Roboto Mono', monospace;
+            background-color: #0d0d0d;
+            color: #e0e0e0;
             overflow: hidden;
-            background: darkred;
+            height: 100vh;
+            margin: 0;
         }
 
+        /* Loading Animation */
         .disappear {
             position: absolute;
-            left: 0;
-            right: 0;
-            margin: auto;
             width: 100%;
             text-align: center;
-            height: fit-content;
-            bottom: 0;
+            font-family: 'Creepster', cursive;
+            color: #FFD700;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            animation: flickerAnimation 3s infinite;
+        }
+
+        @keyframes flickerAnimation {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* Main Content Styling */
+        #main-content {
+            display: none;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* About Section */
+        .about-section h1 {
+            font-size: 3em;
+            font-family: 'Creepster', cursive;
+            color: #FFD700;
+            text-shadow: 0 0 8px #FFD700;
+            text-align: center;
+        }
+
+        .about-section p {
+            font-size: 1.5em;
+            text-align: center;
+            color: #e0e0e0;
+            font-style: italic;
+        }
+
+        /* Bio Section */
+        .bio-section {
+            margin: 20px;
+            font-family: 'Roboto Mono', monospace;
+            color: #b0b0b0;
+        }
+
+        .bio-section .output {
+            color: #FFD700;
+            margin-bottom: 10px;
+        }
+
+        /* Links Styling */
+        a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+
+        /* Glitch Effect for '0FFSEC REAPER' */
+        .glitch {
+            font-size: 2.5em;
+            position: relative;
+            color: #FFD700;
+            animation: glitch 1s infinite;
+        }
+
+        .glitch:before, .glitch:after {
+            content: '0FFSEC REAPER';
+            position: absolute;
             top: 0;
+            left: 0;
+            color: #FFD700;
+            opacity: 0.75;
+            clip: rect(0, 900px, 0, 0);
         }
 
-        .disappear span {
-            display: inline-block;
-            color: transparent;
-            text-shadow: 0px 0px 0px gold;
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
+        .glitch:before {
+            animation: glitchTop 1s infinite linear;
         }
 
-        .disappear span:nth-child(1) {
-            animation-name: disappearleft;
+        .glitch:after {
+            animation: glitchBottom 1s infinite linear;
         }
 
-        .disappear span:nth-child(2) {
-            animation-name: disappearleft;
-            animation-delay: .3s;
+        @keyframes glitch {
+            2%, 64% { transform: translate(2px, 0); }
+            4%, 60% { transform: translate(-2px, 0); }
+            62% { transform: translate(0, 0); }
         }
 
-        .disappear span:nth-child(3) {
-            animation-name: disappearight;
-            animation-delay: .6s;
+        @keyframes glitchTop {
+            0% { clip: rect(42px, 9999px, 44px, 0); }
+            50% { clip: rect(10px, 9999px, 13px, 0); }
+            100% { clip: rect(85px, 9999px, 90px, 0); }
         }
 
-        .disappear span:nth-child(4) {
-            animation-name: disappearleft;
-            animation-delay: .8s;
-        }
-
-        .disappear span:nth-child(5) {
-            animation-name: disappearight;
-            animation-delay: 1s;
-        }
-
-        .disappear span:nth-child(6) {
-            animation-name: disappearight;
-            animation-delay: 1.3s;
-        }
-
-        .disappear span:nth-child(7) {
-            animation-name: disappearleft;
-            animation-delay: 1.6s;
-        }
-
-        .disappear span:nth-child(8) {
-            animation-name: disappearight;
-            animation-delay: 2s;
-        }
-
-        .disappear span:nth-child(9) {
-            animation-name: disappearight;
-            animation-delay: 2.3s;
-        }
-
-        @keyframes disappearleft {
-            50% {
-                transform: skew(50deg) translateY(-200%);
-                text-shadow: 0px 0px 50px;
-                opacity: 0;
-            }
-        }
-
-        @keyframes disappearight {
-            50% {
-                transform: skew(-50deg) translateY(-200%);
-                text-shadow: 0px 0px 50px;
-                opacity: 0;
-            }
+        @keyframes glitchBottom {
+            0% { clip: rect(85px, 9999px, 90px, 0); }
+            50% { clip: rect(10px, 9999px, 13px, 0); }
+            100% { clip: rect(42px, 9999px, 44px, 0); }
         }
     </style>
 
     <script>
-        // After 3 seconds, display the main content and hide the loading animation
-        setTimeout(function () {
+        setTimeout(() => {
             document.getElementById("main-content").style.display = "block";
             document.getElementById("loading-animation").style.display = "none";
         }, 3000);
@@ -135,87 +135,23 @@
 </head>
 
 <body>
-    <!-- Loading Animation -->
     <div id="loading-animation" class="disappear">
-        <span>0</span> <span>F</span> <span>F</span> <span>S</span> <span>E</span> <span>C</span> <span>R</span>
-        <span>E</span> <span>A</span> <span>P</span> <span>E</span> <span>R</span>
+        <span>0</span> <span>F</span> <span>F</span> <span>S</span> <span>E</span> <span>C</span> <span>R</span> <span>E</span> <span>A</span> <span>P</span> <span>E</span> <span>R</span>
     </div>
 
-    <!-- Main Content (Hidden Initially) -->
-    <div id="main-content" style="display: none;">
-        <!-- Background Sound -->
-        <div class="horror-background"></div>
+    <div id="main-content">
+        <div class="about-section">
+            <h1 class="glitch">0FFSEC REAPER</h1>
+            <p>The One Who Takes the Security Soul Out</p>
+        </div>
 
-        <!-- Your content goes here -->
-        <div class="content-container">
-            <!-- Your iframes and other content go here -->
-            <iframe width="460" height="315" src="https://www.youtube.com/embed/zeAgS-I2-7s?si=iMZEIf975yXIFEam"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" style="position: fixed; top: 0; left: 0;"></iframe>
-            <iframe width="460" height="315" src="https://www.youtube.com/embed/eYoCoB_wnsM?si=7gW9nDLhauERcNKR"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                style="position: fixed; top: 0; right: 0;"></iframe>
-            <iframe width="460" height="315" src="https://www.youtube.com/embed/18ddbUxnVp4?si=1Pniw20xZ8zW1CBy"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                style="position: fixed; bottom: 0; left: 0;"></iframe>
-            <iframe width="460" height="315" src="https://www.youtube.com/embed/L6S60NcevVU?si=-xVQq3ha6Zyrr18E"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                style="position: fixed; bottom: 0; right: 0;"></iframe>
-
-            <div class="about-section">
-                <h1>0FFSEC REAPER </h1>
-                <p>The One Who Takes the Security Soul Out</p>
-            </div>
-            <div class="bio-section">
-                <pre>
-                    <!-- Your existing content -->
-                    <span class="command typing">0ffsec💀Reaper⟹⟹⟹⟹ whoami</span>
-                    <span class="output typing">🌐 Hacker | Security Aficionado | Risk Mitigator | Penetration
-                        Tester</span>
-                    <span class="output typing">✨ Passionate about cybersecurity and staying one step ahead of
-                        cyber threats.</span>
-                    <span class="output typing">🤝 Love connecting with fellow enthusiasts and attending industry
-                        events.</span>
-                    <span class="output typing">📚 Currently preparing to conquer the OSCP challenge.</span>
-                    <span class="output typing">🚀 Committed to perpetual learning and unyielding dedication.</span>
-                    <span class="output typing">🛡️ On a mission to fortify digital landscapes and plug security
-                        gaps.</span>
-                    <br>
-                    <span class="output typing">💡 Expertise:</span>
-                    <span class="output typing">🔐 API Penetration Testing</span>
-                    <span class="output typing">🌐 Network Penetration Testing</span>
-                    <span class="output typing">☁️ Cloud Penetration Tester</span>
-                    <span class="output typing">🌐 Web Application Penetration Testing</span>
-                    <br>
-                    <span class="output typing">🎯 Mission:</span>
-                    <span class="output typing">🔍 Identifying vulnerabilities is just the beginning</span>
-                    <span class="output typing">🛠️ Strengthening digital fortresses, one vulnerability at a
-                        time.</span>
-                    <span class="output typing">📈 Rapid response to security threats, ensuring swift
-                        remediation.</span>
-                    <br>
-                    <span class="output typing">🕵️‍♂️ Battle-Tested Cybersecurity Strategist 🕵️‍♂️</span>
-                    <br>
-                    <span class="output typing">GAVE ME THE SOUL I AM HUNGRY</span>
-                </pre>
-            </div>
-            <div style="margin-top: 20px;">
-                <!-- Replace the URL with the URL of your LinkedIn post -->
-                <script src="https://platform.linkedin.com/badges/js/profile.js" async defer
-                    type="text/javascript"></script>
-                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark"
-                    data-type="VERTICAL" data-vanity="sushant-singh-907808217" data-version="v1"><a
-                        class="badge-base__link LI-simple-link"
-                        href="https://in.linkedin.com/in/sushant-singh-907808217?trk=profile-badge">Sushant
-                        Singh</a></div>
-            </div>
+        <div class="bio-section">
+            <pre>
+<span class="output">🌐 Hacker | Security Aficionado | Risk Mitigator | Penetration Tester</span>
+<span class="output">✨ Passionate about cybersecurity and staying one step ahead of cyber threats.</span>
+<span class="output">📚 Currently preparing to conquer the OSCP challenge.</span>
+<span class="output">🚀 Committed to perpetual learning and unyielding dedication.</span>
+            </pre>
         </div>
     </div>
 </body>
